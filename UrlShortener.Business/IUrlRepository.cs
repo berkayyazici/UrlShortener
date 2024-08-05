@@ -10,5 +10,7 @@ namespace UrlShortener.Business
     public interface IUrlRepository
     {
         public List<Url> AllUrls();
+        public string GetShortUrl(string longUrl, string headerLink);
+        public string GetLongUrl(string shortUrl);
     }
 }

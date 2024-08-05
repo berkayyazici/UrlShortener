@@ -7,7 +7,7 @@ using UrlShortener.Data.Model;
 
 namespace UrlShortener.Business
 {
-    internal class UrlService : IUrlRepository
+    public class UrlService : IUrlRepository
     {
         public List<Url> AllUrls()
         {
@@ -41,6 +41,16 @@ namespace UrlShortener.Business
             urls.Add(url3);
 
             return urls;
+        }
+
+        public string GetShortUrl(string longUrl, string headerLink)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetLongUrl(string shortUrl)
+        {
+            throw new NotImplementedException();
         }
     }
 }
