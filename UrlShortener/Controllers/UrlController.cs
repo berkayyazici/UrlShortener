@@ -17,15 +17,37 @@ namespace UrlShortener.Controllers
         }
 
         [HttpGet("{id?}")]
-        public IActionResult GetTodos(Guid? id)
+        public IActionResult GetUrls(string? id)
         {
             var myTodos = urlService.AllUrls();
 
             if (id is null) return Ok(myTodos);
 
-            myTodos = myTodos.Where(t => t.ID == id).ToList();
+            myTodos = myTodos.Where(t => t.ID == Guid.Parse(id.ToString().ToUpper())).ToList();
 
             return Ok(myTodos);
+        }
+
+        [HttpPost]
+        public IActionResult GetShortUrl(string longUrl, string headerLink)
+        {
+            if (longUrl is null) return BadRequest();
+
+            string shortUrl = urlService.GetShortUrl(longUrl, headerLink);
+
+            return Ok(shortUrl);
+        }
+
+        [HttpPost("GetLongUrl")]
+        public IActionResult GetLongUrl(string? shortUrl)
+        {
+            if (shortUrl is null) return BadRequest();
+
+            string longUrl = urlService.GetLongUrl(shortUrl);
+
+            if (longUrl is null or "") return BadRequest();
+
+            return Ok(longUrl);
         }
     }
 }
