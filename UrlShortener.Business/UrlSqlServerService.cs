@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UrlShortener.Data;
-using UrlShortener.Data.Model;
+using UrlShortener.Application;
+using UrlShortener.Application.Contracts;
+using UrlShortener.Data.EntityFrameworkCore;
+using UrlShortener.Domain.Url;
 
-namespace UrlShortener.Business
+namespace UrlShortener.Application
 {
     public class UrlSqlServerService : IUrlRepository
     {

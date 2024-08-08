@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using UrlShortener.Business;
+using UrlShortener.Application;
+using UrlShortener.Application.Contracts;
 
 namespace UrlShortener.Controllers
 {

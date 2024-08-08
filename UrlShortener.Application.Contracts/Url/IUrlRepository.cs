@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UrlShortener.Data.Model;
+using UrlShortener.Domain.Url;
 
-namespace UrlShortener.Business
+namespace UrlShortener.Application.Contracts
 {
     public interface IUrlRepository
     {
