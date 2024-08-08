@@ -6,10 +6,10 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UrlShortener.Data.Model;
+using UrlShortener.Domain.Url;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace UrlShortener.Data
+namespace UrlShortener.Data.EntityFrameworkCore
 {
     public class EfContext : DbContext
     {

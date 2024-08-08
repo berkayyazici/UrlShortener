@@ -1,4 +1,5 @@
-using UrlShortener.Business;
+using UrlShortener.Application;
+using UrlShortener.Application.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
