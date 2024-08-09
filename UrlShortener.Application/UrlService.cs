@@ -9,7 +9,7 @@ using UrlShortener.Domain.Url;
 
 namespace UrlShortener.Application
 {
-    public class UrlService : IUrlRepository
+    public class UrlRepository : IUrlRepository
     {
         public List<Url> AllUrls()
         {

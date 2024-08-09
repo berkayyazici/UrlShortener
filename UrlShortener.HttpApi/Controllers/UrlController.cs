@@ -10,17 +10,17 @@ namespace UrlShortener.Controllers
     [ApiController]
     public class UrlController : ControllerBase
     {
-        private readonly IUrlRepository urlService;
+        private readonly IUrlRepository _urlRepository;
 
         public UrlController(IUrlRepository repository)
         {
-            urlService = repository;
+            _urlRepository = repository;
         }
 
         [HttpGet("{id?}")]
         public IActionResult GetUrls(string? id)
         {
-            var myTodos = urlService.AllUrls();
+            var myTodos = _urlRepository.AllUrls();
 
             if (id is null) return Ok(myTodos);
 
@@ -34,7 +34,7 @@ namespace UrlShortener.Controllers
         {
             if (longUrl is null) return BadRequest();
 
-            string shortUrl = urlService.GetShortUrl(longUrl, headerLink);
+            string shortUrl = _urlRepository.GetShortUrl(longUrl, headerLink);
 
             return Ok(shortUrl);
         }
@@ -44,7 +44,7 @@ namespace UrlShortener.Controllers
         {
             if (shortUrl is null) return BadRequest();
 
-            string longUrl = urlService.GetLongUrl(shortUrl);
+            string longUrl = _urlRepository.GetLongUrl(shortUrl);
 
             if (longUrl is null or "") return BadRequest();
 
