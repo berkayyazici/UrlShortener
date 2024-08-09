@@ -10,7 +10,7 @@ using UrlShortener.Domain.Url;
 
 namespace UrlShortener.Application
 {
-    public class UrlSqlServerService : IUrlRepository
+    public class UrlSqlServerUrlRepository : IUrlRepository
     {
         private readonly EfContext efContext = new EfContext();
         public List<Url> AllUrls()
