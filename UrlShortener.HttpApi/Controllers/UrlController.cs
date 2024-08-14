@@ -17,19 +17,15 @@ namespace UrlShortener.Controllers
             _urlRepository = repository;
         }
 
-        [HttpGet("{id?}")]
-        public IActionResult GetUrls(string? id)
+        [HttpGet]
+        public IActionResult GetUrls()
         {
             var myTodos = _urlRepository.AllUrls();
-
-            if (id is null) return Ok(myTodos);
-
-            myTodos = myTodos.Where(t => t.ID == Guid.Parse(id.ToString().ToUpper())).ToList();
 
             return Ok(myTodos);
         }
 
-        [HttpPost]
+        [HttpPost("GetShortUrl")]
         public IActionResult GetShortUrl(string longUrl, string headerLink)
         {
             if (longUrl is null) return BadRequest();
