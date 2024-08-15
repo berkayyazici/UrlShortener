@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UrlShortener.Application\UrlShortener.Application.csproj" />
+    <ProjectReference Include="..\UrlShortener.Application.Contracts\UrlShortener.Application.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
