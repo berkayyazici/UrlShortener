@@ -17,7 +17,7 @@ namespace UrlShortener.Data.EntityFrameworkCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Data Source = MSI\\MSSQLSERVER01; Database = LocalDb; Integrated Security = True; Connect Timeout = 30; Encrypt = False; Trust Server Certificate = False; Application Intent = ReadWrite; Multi Subnet Failover = False";
+            var connectionString = "Data Source = MSI\\MSSQLSERVER01; Database = LocalDb; Trusted_Connection=True;TrustServerCertificate=True";
             optionsBuilder.UseSqlServer(connectionString);
         }
 

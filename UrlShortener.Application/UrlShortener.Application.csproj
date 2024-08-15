@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UrlShortener.Application.Contracts\UrlShortener.Application.Contracts.csproj" />
-    <ProjectReference Include="..\UrlShortener.EntityFrameworkCore\UrlShortener.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\UrlShortener.Domain\UrlShortener.Domain.csproj" />
   </ItemGroup>
 
 </Project>
