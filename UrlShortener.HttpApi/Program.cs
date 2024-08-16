@@ -21,7 +21,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IUrlRepository, UrlAppService>();
+builder.Services.AddScoped<IUrlRepository, EfCoreUrlRepository>();
 
 var app = builder.Build();
 
