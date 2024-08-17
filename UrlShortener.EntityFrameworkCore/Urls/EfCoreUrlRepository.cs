@@ -5,9 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UrlShortener.Data.EntityFrameworkCore;
-using UrlShortener.Domain.Shared;
 using UrlShortener.Domain.Url;
-using Url = UrlShortener.Domain.Url.Url;
 
 namespace UrlShortener.EntityFrameworkCore.Urls
 {
@@ -30,7 +28,7 @@ namespace UrlShortener.EntityFrameworkCore.Urls
         public async Task<Url> FindByLongUrlAsync(string longUrl)
         {
             var dbSet = await _context.Urls.ToListAsync();
-            return dbSet.FirstOrDefault(url => url.LongUrl == longUrl) ?? throw new UrlCannotFoundException(longUrl);
+            return dbSet.FirstOrDefault(url => url.LongUrl == longUrl);
         }
 
         public Task<Url> GetAsync(Guid id)

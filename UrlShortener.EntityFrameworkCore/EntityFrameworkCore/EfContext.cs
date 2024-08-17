@@ -15,14 +15,15 @@ namespace UrlShortener.Data.EntityFrameworkCore
     {
         public DbSet<Url> Urls { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public EfContext(DbContextOptions<EfContext> options) : base(options)
         {
-            var connectionString = "Data Source = MSI\\MSSQLSERVER01; Database = LocalDb; Trusted_Connection=True;TrustServerCertificate=True";
-            optionsBuilder.UseSqlServer(connectionString);
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Url>().HasData(new Url
             {
                 ID = Guid.NewGuid(),

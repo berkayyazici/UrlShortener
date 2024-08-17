@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UrlShortener.Domain.Url;
-using UrlShortener.Application.Contracts.Url;
-using UrlShortener.Application.Contracts;
+using UrlShortener.Application.Urls;
 
 namespace UrlShortener.Application.Urls
 {
@@ -48,6 +47,5 @@ namespace UrlShortener.Application.Urls
         {
             throw new NotImplementedException();
         }
-
     }
 }
