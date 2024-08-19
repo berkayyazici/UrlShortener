@@ -5,10 +5,13 @@ using UrlShortener.Data.EntityFrameworkCore;
 using UrlShortener.Data.Migrations;
 using UrlShortener.Domain.Url;
 using UrlShortener.EntityFrameworkCore.Urls;
+using UrlShortener.HttpApi.Services;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("SqlServerConnection");
 
 // Add services to the container.
 
@@ -24,7 +27,7 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddControllers();
 builder.Services.AddDbContext<EfContext>(
-        options => options.UseSqlServer("Data Source=MSI;Initial Catalog=LocalDb;Integrated Security=True;Trust Server Certificate=True"));
+        options => options.UseSqlServer(connectionString));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -40,14 +43,16 @@ builder.Services.AddScoped<UrlManager>();
 
 var app = builder.Build();
 
+DatabaseManagementService.MigrationInitialisation(app);
+
 app.UseCors("AllowSpecificOrigin");
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 //app.UseHttpsRedirection();
 

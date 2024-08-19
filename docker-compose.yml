@@ -5,6 +5,12 @@ services:
     build:
       context: .
       dockerfile: UrlShortener.HttpApi/Dockerfile
+    environment:
+      server: "MSI.database"
+      port: "1433"
+      database: "LocalDb"
+      dbuser: "testUser"
+      password: "testUser"
     ports:
         - "5000:5000"
         - "5001:5001"
@@ -13,8 +19,8 @@ services:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: urlshortener.database
     environment:
-        - "ACCEPT_EULA=Y"
-    volumes:
-        - ./.containers/urls-db:/var/lib/mssql/data 
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "testUser"
+        MSSQL_ID: Developer
     ports:
-        - 5432:5432 
+        - 1433:1433
