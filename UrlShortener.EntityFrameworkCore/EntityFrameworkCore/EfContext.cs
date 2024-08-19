@@ -13,12 +13,12 @@ namespace UrlShortener.Data.EntityFrameworkCore
 {
     public class EfContext : DbContext
     {
-        public DbSet<Url> Urls { get; set; }
-
         public EfContext(DbContextOptions<EfContext> options) : base(options)
         {
-            
+
         }
+
+        public DbSet<Url> Urls { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

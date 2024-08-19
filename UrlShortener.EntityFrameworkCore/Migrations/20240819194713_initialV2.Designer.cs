@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UrlShortener.Data.EntityFrameworkCore;
 
@@ -11,9 +12,11 @@ using UrlShortener.Data.EntityFrameworkCore;
 namespace UrlShortener.Data.Migrations
 {
     [DbContext(typeof(EfContext))]
-    partial class EfContextModelSnapshot : ModelSnapshot
+    [Migration("20240819194713_initialV2")]
+    partial class initialV2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,7 +46,7 @@ namespace UrlShortener.Data.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("f638d5b5-6458-42c3-82a8-0b4869f74b26"),
+                            ID = new Guid("ab82de93-f2b9-4d39-8e93-0343eea2840a"),
                             LongUrl = "https://tU/11",
                             ShortUrl = "https://testURL/11"
                         });
