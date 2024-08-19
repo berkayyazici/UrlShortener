@@ -1,0 +1,20 @@
+services:
+  urlshortener.httpapi:
+    image: ${DOCKER_REGISTRY-}urlshortenerhttpapi
+    container_name: urlshortener.api
+    build:
+      context: .
+      dockerfile: UrlShortener.HttpApi/Dockerfile
+    ports:
+        - "5000:5000"
+        - "5001:5001"
+
+  MSI.database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: urlshortener.database
+    environment:
+        - "ACCEPT_EULA=Y"
+    volumes:
+        - ./.containers/urls-db:/var/lib/mssql/data 
+    ports:
+        - 5432:5432 

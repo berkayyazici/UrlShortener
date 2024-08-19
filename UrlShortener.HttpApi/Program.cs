@@ -2,8 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using UrlShortener.Application;
 using UrlShortener.Application.Urls;
 using UrlShortener.Data.EntityFrameworkCore;
+using UrlShortener.Data.Migrations;
 using UrlShortener.Domain.Url;
 using UrlShortener.EntityFrameworkCore.Urls;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,14 +19,12 @@ builder.Services.AddCors(options =>
         {
             builder.AllowAnyOrigin(/*"http://localhost:5173/"*/)
                    .AllowAnyHeader()
-                   .AllowAnyMethod();
+            .AllowAnyMethod();
         });
 });
-
 builder.Services.AddControllers();
-
 builder.Services.AddDbContext<EfContext>(
-        options => options.UseSqlServer("Data Source = MSI\\MSSQLSERVER01; Database = LocalDb; Trusted_Connection=True;TrustServerCertificate=True"));
+        options => options.UseSqlServer("Data Source=MSI;Initial Catalog=LocalDb;Integrated Security=True;Trust Server Certificate=True"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
