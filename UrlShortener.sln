@@ -7,13 +7,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3DD4F556-AF29-4270-8BC8-CC7D40047BEE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.Application.Tests", "UrlShortener.Application.Tests", "{E3EDD15F-424B-437A-9B2E-648AA2BFEA15}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.Application", "UrlShortener.Application", "{E3EDD15F-424B-437A-9B2E-648AA2BFEA15}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.Domain.Tests", "UrlShortener.Domain.Tests", "{C267D1B2-A151-4BF2-AAC8-4E9BB97C6F82}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.Domain", "UrlShortener.Domain", "{C267D1B2-A151-4BF2-AAC8-4E9BB97C6F82}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.EntityFrameworkCore.Tests", "UrlShortener.EntityFrameworkCore.Tests", "{7E9D3BFC-DC7D-4FD3-9BF8-1001E9B207EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.EntityFrameworkCore", "UrlShortener.EntityFrameworkCore", "{7E9D3BFC-DC7D-4FD3-9BF8-1001E9B207EA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.HttpApi.Tests", "UrlShortener.HttpApi.Tests", "{78D38974-1F28-4D72-A26D-53A93A27BC8D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.HttpApi", "UrlShortener.HttpApi", "{78D38974-1F28-4D72-A26D-53A93A27BC8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Domain.Tests", "..\UrlShortener.Domain.Tests\UrlShortener.Domain.Tests.csproj", "{1A05EACB-E954-46AA-9A91-EEA676562C5F}"
 EndProject
@@ -48,7 +48,6 @@ Global
 		{C267D1B2-A151-4BF2-AAC8-4E9BB97C6F82} = {3DD4F556-AF29-4270-8BC8-CC7D40047BEE}
 		{7E9D3BFC-DC7D-4FD3-9BF8-1001E9B207EA} = {3DD4F556-AF29-4270-8BC8-CC7D40047BEE}
 		{78D38974-1F28-4D72-A26D-53A93A27BC8D} = {3DD4F556-AF29-4270-8BC8-CC7D40047BEE}
-		{1A05EACB-E954-46AA-9A91-EEA676562C5F} = {C267D1B2-A151-4BF2-AAC8-4E9BB97C6F82}
 		{F9151D09-08F8-4889-9FBF-F03C61BA014F} = {78D38974-1F28-4D72-A26D-53A93A27BC8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
