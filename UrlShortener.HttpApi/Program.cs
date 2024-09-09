@@ -56,6 +56,7 @@ app.UseCors("AllowSpecificOrigin");
 //}
 
 app.UseMiddleware<RequestResponseLoggingMiddleware>();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 //app.UseHttpsRedirection();
 
