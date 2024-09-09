@@ -5,6 +5,7 @@ using UrlShortener.Data.EntityFrameworkCore;
 using UrlShortener.Data.Migrations;
 using UrlShortener.Domain.Url;
 using UrlShortener.EntityFrameworkCore.Urls;
+using UrlShortener.HttpApi.Middleware;
 using UrlShortener.HttpApi.Services;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -53,6 +54,8 @@ app.UseCors("AllowSpecificOrigin");
     app.UseSwagger();
     app.UseSwaggerUI();
 //}
+
+app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
 //app.UseHttpsRedirection();
 
