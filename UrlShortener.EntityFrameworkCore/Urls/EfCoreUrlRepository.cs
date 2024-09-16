@@ -31,9 +31,10 @@ namespace UrlShortener.EntityFrameworkCore.Urls
             return dbSet.FirstOrDefault(url => url.LongUrl == longUrl);
         }
 
-        public Task<Url> GetAsync(Guid id)
+        public async Task<Url> GetAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var dbSet = await _context.Urls.ToListAsync();
+            return dbSet.FirstOrDefault(url => url.ID == id);
         }
 
         public async Task<List<Url>> GetListAsync()
