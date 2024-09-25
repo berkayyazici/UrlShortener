@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\UrlShortener.Application\UrlShortener.Application.csproj" />
-    <ProjectReference Include="..\..\UrlShortener.EntityFrameworkCore\UrlShortener.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\src\UrlShortener.Application\UrlShortener.Application.csproj" />
+    <ProjectReference Include="..\..\src\UrlShortener.EntityFrameworkCore\UrlShortener.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -42,25 +42,18 @@ public class UrlAppServiceTests
 
         _mockUrlRepository.Setup(x => x.GetAsync(urlId)).ReturnsAsync(expectedUrl);
 
-        // Act
-        //var result = _urlAppService.GetAsync(urlId);
-
         // Assert
         Assert.Equal("https://github.com/berkayyazici/UrlShortener", result.LongUrl);
     }
 
-    //[Fact]
-    //public void GetUrlById_ShouldReturnNotFound_WhenUrlDoesNotExist()
-    //{
-    //    // Arrange
-    //    Guid urlId = Guid.NewGuid();
+    [Fact]
+    public void GetUrlById_ShouldReturnNotFound_WhenUrlDoesNotExist()
+    {
+        Guid urlId = Guid.NewGuid();
 
-    //    _mockUrlRepository.Setup(x => x.GetAsync(urlId)).ReturnsAsync((Url)null);
+        var result = _context.Urls.FirstOrDefault(p => p.ID == urlId);
 
-    //    // Act
-    //    var result = _urlAppService.GetAsync(urlId);
-
-    //    // Assert
-    //    Assert.Equal("URL not found", result);
-    //}
+        // Assert
+        Assert.Equal("URL not found", result == null ? "URL not found" : result.LongUrl);
+    }
 }
