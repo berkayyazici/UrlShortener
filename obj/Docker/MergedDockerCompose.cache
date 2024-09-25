@@ -1,0 +1,58 @@
+name: dockercompose11480687118492450741
+services:
+  MSI.database:
+    container_name: urlshortener.database
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_ID: Developer
+      SA_PASSWORD: testUser
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+  urlshortener.httpapi:
+    build:
+      context: C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener
+      dockerfile: UrlShortener.HttpApi/Dockerfile
+    container_name: urlshortener.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "5000"
+      ASPNETCORE_HTTPS_PORTS: "5001"
+      database: LocalDb
+      dbuser: testUser
+      password: testUser
+      port: "1433"
+      server: MSI.database
+    image: urlshortenerhttpapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5000
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 5001
+        published: "5001"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\berka\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\berka\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose11480687118492450741_default
