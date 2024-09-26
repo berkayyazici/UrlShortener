@@ -12,5 +12,10 @@ namespace UrlShortener.Domain.Url
         public string ShortUrl { get; set; }
         public string LongUrl { get; set; }
 
+        public bool IsValidUrl()
+        {
+            return LongUrl.StartsWith("https") || LongUrl.StartsWith("http");
+        }
+
     }
 }

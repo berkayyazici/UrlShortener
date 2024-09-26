@@ -4,14 +4,82 @@
     "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj": {
+    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj",
-        "projectName": "UrlShortener.HttpApi.Tests",
-        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj",
+        "projectName": "UrlShortener.Application",
+        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj",
         "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\obj\\",
+        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj"
+              },
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj",
+        "projectName": "UrlShortener.Domain.Shared",
+        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,7 +113,317 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj",
+        "projectName": "UrlShortener.Domain",
+        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj",
+        "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.EntityFrameworkCore\\UrlShortener.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.EntityFrameworkCore\\UrlShortener.EntityFrameworkCore.csproj",
+        "projectName": "UrlShortener.EntityFrameworkCore",
+        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.EntityFrameworkCore\\UrlShortener.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain.Shared\\UrlShortener.Domain.Shared.csproj"
+              },
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.HttpApi\\UrlShortener.HttpApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.HttpApi\\UrlShortener.HttpApi.csproj",
+        "projectName": "UrlShortener.HttpApi",
+        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.HttpApi\\UrlShortener.HttpApi.csproj",
+        "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.HttpApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj"
+              },
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.EntityFrameworkCore\\UrlShortener.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.EntityFrameworkCore\\UrlShortener.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj",
+        "projectName": "UrlShortener.HttpApi.Tests",
+        "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\UrlShortener.HttpApi.Tests.csproj",
+        "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\test\\UrlShortener.HttpApi.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.HttpApi\\UrlShortener.HttpApi.csproj": {
+                "projectPath": "C:\\Users\\berka\\OneDrive\\Masaüstü\\url shortener v3\\UrlShortener\\src\\UrlShortener.HttpApi\\UrlShortener.HttpApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"

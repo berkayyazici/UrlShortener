@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3DD4F556-AF29-4270-8BC8-CC7D40047BEE}"
+	ProjectSection(SolutionItems) = preProject
+		xunit.runner.json = xunit.runner.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UrlShortener.Application", "UrlShortener.Application", "{E3EDD15F-424B-437A-9B2E-648AA2BFEA15}"
 EndProject
