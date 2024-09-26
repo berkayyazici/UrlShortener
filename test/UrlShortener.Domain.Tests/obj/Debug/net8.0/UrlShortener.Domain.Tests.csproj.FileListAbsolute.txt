@@ -1,3 +1,4 @@
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_UrlShortener.Domain.Tests
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\testhost.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -7,6 +8,7 @@ C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShorten
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.Tests.runtimeconfig.json
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.Tests.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.Tests.pdb
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Elasticsearch.Net.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -15,6 +17,7 @@ C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShorten
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Nest.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\xunit.abstractions.dll
@@ -86,6 +89,10 @@ C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShorten
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.dll
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.Shared.dll
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.pdb
+C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\bin\Debug\net8.0\UrlShortener.Domain.Shared.pdb
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\obj\Debug\net8.0\UrlShortener.Domain.Tests.csproj.AssemblyReference.cache
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\obj\Debug\net8.0\UrlShortener.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\berka\OneDrive\Masaüstü\url shortener v3\UrlShortener\test\UrlShortener.Domain.Tests\obj\Debug\net8.0\UrlShortener.Domain.Tests.AssemblyInfoInputs.cache

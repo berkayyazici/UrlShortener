@@ -26,7 +26,7 @@ namespace UrlShortener.Controllers
         }
 
         [HttpPost("GetShortUrl")]
-        public async Task<IActionResult> GetShortUrl(string longUrl, string headerLink)
+        public async Task<IActionResult> GetShortUrl(string? longUrl, string? headerLink)
         {
             if (longUrl is null) return BadRequest();
 
